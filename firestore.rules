@@ -1,0 +1,532 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Pillar 1 & Phase 4.1: Global Safety Net (Default-Deny Catch-All)
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Phase 3: Hardened Global Helpers
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isVerified() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    // Tier 1 Admin Check: Verified email matching bootstrapped project owner OR document in /admins/{uid}
+    function isAdmin() {
+      return isVerified() && (
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid)) ||
+        request.auth.token.email == 'samcoc70020@gmail.com'
+      );
+    }
+
+    // Relational parent existence check supporting both sequential batches (exists) and same-batch writes (existsAfter)
+    function parentProjectExistsAndAuthorized(projectId) {
+      return (
+        exists(/databases/$(database)/documents/projects/$(projectId)) &&
+        (
+          get(/databases/$(database)/documents/projects/$(projectId)).data.ownerId == request.auth.uid ||
+          isAdmin()
+        )
+      ) || (
+        existsAfter(/databases/$(database)/documents/projects/$(projectId)) &&
+        (
+          getAfter(/databases/$(database)/documents/projects/$(projectId)).data.ownerId == request.auth.uid ||
+          isAdmin()
+        )
+      );
+    }
+
+    function parentParcelExistsAndAuthorized(parcelId) {
+      return (
+        exists(/databases/$(database)/documents/parcels/$(parcelId)) &&
+        (
+          get(/databases/$(database)/documents/parcels/$(parcelId)).data.ownerId == request.auth.uid ||
+          isAdmin()
+        )
+      ) || (
+        existsAfter(/databases/$(database)/documents/parcels/$(parcelId)) &&
+        (
+          getAfter(/databases/$(database)/documents/parcels/$(parcelId)).data.ownerId == request.auth.uid ||
+          isAdmin()
+        )
+      );
+    }
+
+    // Validation Blueprint for Project
+    function isValidProject(data) {
+      return data.keys().hasAll([
+          'title', 'code', 'state', 'district', 'agency',
+          'totalAreaHectares', 'acquiredAreaHectares',
+          'budgetInrCrores', 'disbursedInrCrores',
+          'stage', 'status', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'title', 'code', 'state', 'district', 'agency',
+          'totalAreaHectares', 'acquiredAreaHectares',
+          'budgetInrCrores', 'disbursedInrCrores',
+          'stage', 'status', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        data.title is string && data.title.size() >= 3 && data.title.size() <= 150 &&
+        data.code is string && data.code.size() >= 2 && data.code.size() <= 40 && data.code.matches('^[A-Za-z0-9_\\-]+$') &&
+        data.state is string && data.state.size() >= 2 && data.state.size() <= 80 &&
+        data.district is string && data.district.size() >= 2 && data.district.size() <= 80 &&
+        data.agency is string && data.agency.size() >= 2 && data.agency.size() <= 100 &&
+        data.totalAreaHectares is number && data.totalAreaHectares >= 0 && data.totalAreaHectares <= 10000000 &&
+        data.acquiredAreaHectares is number && data.acquiredAreaHectares >= 0 && data.acquiredAreaHectares <= data.totalAreaHectares &&
+        data.budgetInrCrores is number && data.budgetInrCrores >= 0 && data.budgetInrCrores <= 10000000 &&
+        data.disbursedInrCrores is number && data.disbursedInrCrores >= 0 && data.disbursedInrCrores <= data.budgetInrCrores &&
+        data.stage is string && data.stage.size() >= 3 && data.stage.size() <= 40 &&
+        data.stage in ['Section 4 SIA', 'Section 11 Notification', 'Section 19 Declaration', 'Section 23 Award', 'Possession Taken'] &&
+        data.status is string && data.status.size() >= 3 && data.status.size() <= 20 &&
+        data.status in ['Active', 'Delayed', 'Disputed', 'Completed'] &&
+        data.ownerId is string && data.ownerId.size() >= 1 && data.ownerId.size() <= 128 && data.ownerId.matches('^[a-zA-Z0-9_\\-]+$') &&
+        data.ownerId == request.auth.uid &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    // Validation Blueprint for LandParcel
+    function isValidLandParcel(data) {
+      return data.keys().hasAll([
+          'surveyNumber', 'projectId', 'projectTitle', 'village', 'district',
+          'landownerName', 'areaHectares', 'landType', 'acquisitionStage',
+          'compensationStatus', 'compensationAmountInr', 'rehabStatus',
+          'latitude', 'longitude', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'surveyNumber', 'projectId', 'projectTitle', 'village', 'district',
+          'landownerName', 'areaHectares', 'landType', 'acquisitionStage',
+          'compensationStatus', 'compensationAmountInr', 'rehabStatus',
+          'latitude', 'longitude', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        data.surveyNumber is string && data.surveyNumber.size() >= 1 && data.surveyNumber.size() <= 60 &&
+        data.projectId is string && data.projectId.size() >= 1 && data.projectId.size() <= 128 && data.projectId.matches('^[a-zA-Z0-9_\\-]+$') &&
+        data.projectTitle is string && data.projectTitle.size() >= 3 && data.projectTitle.size() <= 150 &&
+        data.village is string && data.village.size() >= 2 && data.village.size() <= 100 &&
+        data.district is string && data.district.size() >= 2 && data.district.size() <= 80 &&
+        data.landownerName is string && data.landownerName.size() >= 2 && data.landownerName.size() <= 120 &&
+        data.areaHectares is number && data.areaHectares > 0 && data.areaHectares <= 100000 &&
+        data.landType is string && data.landType.size() >= 3 && data.landType.size() <= 30 &&
+        data.landType in ['Agricultural', 'Residential', 'Commercial', 'Barren', 'Forest'] &&
+        data.acquisitionStage is string && data.acquisitionStage.size() >= 3 && data.acquisitionStage.size() <= 40 &&
+        data.acquisitionStage in ['Survey Pending', 'SIA Underway', 'Notification Issued', 'Award Declared', 'Compensation Paid', 'Possession Handover'] &&
+        data.compensationStatus is string && data.compensationStatus.size() >= 3 && data.compensationStatus.size() <= 30 &&
+        data.compensationStatus in ['Pending Assessment', 'Approved', 'Disbursed', 'Litigation'] &&
+        data.compensationAmountInr is number && data.compensationAmountInr >= 0 && data.compensationAmountInr <= 100000000000 &&
+        data.rehabStatus is string && data.rehabStatus.size() >= 3 && data.rehabStatus.size() <= 30 &&
+        data.rehabStatus in ['Not Applicable', 'Eligible', 'Allotted', 'Completed'] &&
+        data.latitude is number && data.latitude >= -90 && data.latitude <= 90 &&
+        data.longitude is number && data.longitude >= -180 && data.longitude <= 180 &&
+        data.ownerId is string && data.ownerId.size() >= 1 && data.ownerId.size() <= 128 && data.ownerId.matches('^[a-zA-Z0-9_\\-]+$') &&
+        data.ownerId == request.auth.uid &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    function isValidLandownerRecord(data) {
+      return data.keys().hasAll([
+          'landownerId', 'parcelId', 'projectId', 'fullName', 'fatherOrSpouseName',
+          'dummyContactNumber', 'dummyEmail', 'village', 'district', 'ownershipType',
+          'sharePercentage', 'kycVerified', 'isSyntheticDemo', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'landownerId', 'parcelId', 'projectId', 'fullName', 'fatherOrSpouseName',
+          'dummyContactNumber', 'dummyEmail', 'village', 'district', 'ownershipType',
+          'sharePercentage', 'kycVerified', 'isSyntheticDemo', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        isValidId(data.landownerId) &&
+        isValidId(data.parcelId) &&
+        isValidId(data.projectId) &&
+        data.fullName is string && data.fullName.size() >= 2 && data.fullName.size() <= 120 &&
+        data.fatherOrSpouseName is string && data.fatherOrSpouseName.size() >= 2 && data.fatherOrSpouseName.size() <= 120 &&
+        data.dummyContactNumber is string && data.dummyContactNumber.size() >= 5 && data.dummyContactNumber.size() <= 30 &&
+        data.dummyEmail is string && data.dummyEmail.size() >= 5 && data.dummyEmail.size() <= 120 &&
+        data.village is string && data.village.size() >= 2 && data.village.size() <= 100 &&
+        data.district is string && data.district.size() >= 2 && data.district.size() <= 80 &&
+        data.ownershipType is string && data.ownershipType.size() >= 2 && data.ownershipType.size() <= 50 &&
+        data.sharePercentage is number && data.sharePercentage > 0 && data.sharePercentage <= 100 &&
+        data.kycVerified is bool &&
+        data.isSyntheticDemo is bool && data.isSyntheticDemo == true &&
+        isValidId(data.ownerId) && data.ownerId == request.auth.uid &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    function isValidCompensationRecord(data) {
+      return data.keys().hasAll([
+          'compensationId', 'parcelId', 'projectId', 'landownerId',
+          'baseMarketValueInr', 'solatiumAmountInr', 'multiplierFactor',
+          'totalAwardAmountInr', 'paidAmountInr', 'pendingAmountInr',
+          'paymentStatus', 'pfmsReferenceCode', 'awardDate',
+          'isSyntheticDemo', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'compensationId', 'parcelId', 'projectId', 'landownerId',
+          'baseMarketValueInr', 'solatiumAmountInr', 'multiplierFactor',
+          'totalAwardAmountInr', 'paidAmountInr', 'pendingAmountInr',
+          'paymentStatus', 'pfmsReferenceCode', 'awardDate',
+          'isSyntheticDemo', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        isValidId(data.compensationId) &&
+        isValidId(data.parcelId) &&
+        isValidId(data.projectId) &&
+        isValidId(data.landownerId) &&
+        data.baseMarketValueInr is number && data.baseMarketValueInr >= 0 &&
+        data.solatiumAmountInr is number && data.solatiumAmountInr >= 0 &&
+        data.multiplierFactor is number && data.multiplierFactor >= 1 &&
+        data.totalAwardAmountInr is number && data.totalAwardAmountInr >= 0 &&
+        data.paidAmountInr is number && data.paidAmountInr >= 0 &&
+        data.pendingAmountInr is number && data.pendingAmountInr >= 0 &&
+        data.paymentStatus is string && data.paymentStatus.size() >= 4 && data.paymentStatus.size() <= 20 &&
+        data.paymentStatus in ['pending', 'partially_paid', 'paid'] &&
+        data.pfmsReferenceCode is string && data.pfmsReferenceCode.size() >= 2 && data.pfmsReferenceCode.size() <= 60 &&
+        data.awardDate is string && data.awardDate.size() >= 4 && data.awardDate.size() <= 30 &&
+        data.isSyntheticDemo is bool && data.isSyntheticDemo == true &&
+        isValidId(data.ownerId) && data.ownerId == request.auth.uid &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    function isValidDocumentRecord(data) {
+      return data.keys().hasAll([
+          'documentId', 'parcelId', 'projectId', 'landownerId',
+          'jamabandiStatus', 'section11GazetteRef', 'section19DeclarationRef',
+          'encumbranceStatus', 'verificationStatus', 'verifiedByOfficer',
+          'isSyntheticDemo', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'documentId', 'parcelId', 'projectId', 'landownerId',
+          'jamabandiStatus', 'section11GazetteRef', 'section19DeclarationRef',
+          'encumbranceStatus', 'verificationStatus', 'verifiedByOfficer',
+          'isSyntheticDemo', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        isValidId(data.documentId) &&
+        isValidId(data.parcelId) &&
+        isValidId(data.projectId) &&
+        isValidId(data.landownerId) &&
+        data.jamabandiStatus is string && data.jamabandiStatus.size() >= 2 && data.jamabandiStatus.size() <= 80 &&
+        data.section11GazetteRef is string && data.section11GazetteRef.size() >= 2 && data.section11GazetteRef.size() <= 80 &&
+        data.section19DeclarationRef is string && data.section19DeclarationRef.size() >= 2 && data.section19DeclarationRef.size() <= 80 &&
+        data.encumbranceStatus is string && data.encumbranceStatus.size() >= 2 && data.encumbranceStatus.size() <= 80 &&
+        data.verificationStatus is string && data.verificationStatus.size() >= 4 && data.verificationStatus.size() <= 30 &&
+        data.verificationStatus in ['verified', 'objection_logged', 'pending_verification'] &&
+        data.verifiedByOfficer is string && data.verifiedByOfficer.size() >= 2 && data.verifiedByOfficer.size() <= 80 &&
+        data.isSyntheticDemo is bool && data.isSyntheticDemo == true &&
+        isValidId(data.ownerId) && data.ownerId == request.auth.uid &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    function isValidRehabilitationRecord(data) {
+      return data.keys().hasAll([
+          'rnrId', 'parcelId', 'projectId', 'landownerId',
+          'affectedFamilySize', 'livelihoodCategory', 'subsistenceAllowanceInr',
+          'resettlementGrantInr', 'housingUnitEntitled', 'rnrStatus',
+          'paymentStatus', 'allotmentReference', 'isSyntheticDemo',
+          'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'rnrId', 'parcelId', 'projectId', 'landownerId',
+          'affectedFamilySize', 'livelihoodCategory', 'subsistenceAllowanceInr',
+          'resettlementGrantInr', 'housingUnitEntitled', 'rnrStatus',
+          'paymentStatus', 'allotmentReference', 'isSyntheticDemo',
+          'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        isValidId(data.rnrId) &&
+        isValidId(data.parcelId) &&
+        isValidId(data.projectId) &&
+        isValidId(data.landownerId) &&
+        data.affectedFamilySize is number && data.affectedFamilySize >= 1 && data.affectedFamilySize <= 50 &&
+        data.livelihoodCategory is string && data.livelihoodCategory.size() >= 2 && data.livelihoodCategory.size() <= 80 &&
+        data.subsistenceAllowanceInr is number && data.subsistenceAllowanceInr >= 0 &&
+        data.resettlementGrantInr is number && data.resettlementGrantInr >= 0 &&
+        data.housingUnitEntitled is bool &&
+        data.rnrStatus is string && data.rnrStatus.size() >= 4 && data.rnrStatus.size() <= 30 &&
+        data.rnrStatus in ['assessment_ongoing', 'allotted', 'completed'] &&
+        data.paymentStatus is string && data.paymentStatus.size() >= 4 && data.paymentStatus.size() <= 20 &&
+        data.paymentStatus in ['pending', 'partially_paid', 'paid'] &&
+        data.allotmentReference is string && data.allotmentReference.size() >= 2 && data.allotmentReference.size() <= 80 &&
+        data.isSyntheticDemo is bool && data.isSyntheticDemo == true &&
+        isValidId(data.ownerId) && data.ownerId == request.auth.uid &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    function isValidParcelGeometryRecord(data) {
+      return data.keys().hasAll([
+          'parcelId', 'projectId', 'demoUlpin', 'acquisitionStatus',
+          'paymentStatus', 'village', 'district',
+          'bboxLatMin', 'bboxLatMax', 'bboxLngMin', 'bboxLngMax',
+          'isSyntheticDemo', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'parcelId', 'projectId', 'demoUlpin', 'acquisitionStatus',
+          'paymentStatus', 'village', 'district',
+          'bboxLatMin', 'bboxLatMax', 'bboxLngMin', 'bboxLngMax',
+          'isSyntheticDemo', 'ownerId', 'createdAt', 'updatedAt'
+        ]) &&
+        isValidId(data.parcelId) &&
+        isValidId(data.projectId) &&
+        data.demoUlpin is string && data.demoUlpin.size() >= 2 && data.demoUlpin.size() <= 60 &&
+        data.acquisitionStatus is string && data.acquisitionStatus.size() >= 4 && data.acquisitionStatus.size() <= 30 &&
+        data.acquisitionStatus in ['not_initiated', 'notification_issued', 'documentation_pending', 'disputed', 'approved', 'acquired'] &&
+        data.paymentStatus is string && data.paymentStatus.size() >= 4 && data.paymentStatus.size() <= 20 &&
+        data.paymentStatus in ['pending', 'partially_paid', 'paid'] &&
+        data.village is string && data.village.size() >= 2 && data.village.size() <= 100 &&
+        data.district is string && data.district.size() >= 2 && data.district.size() <= 80 &&
+        data.bboxLatMin is number && data.bboxLatMin >= -90 && data.bboxLatMin <= 90 &&
+        data.bboxLatMax is number && data.bboxLatMax >= -90 && data.bboxLatMax <= 90 &&
+        data.bboxLngMin is number && data.bboxLngMin >= -180 && data.bboxLngMin <= 180 &&
+        data.bboxLngMax is number && data.bboxLngMax >= -180 && data.bboxLngMax <= 180 &&
+        data.isSyntheticDemo is bool && data.isSyntheticDemo == true &&
+        isValidId(data.ownerId) && data.ownerId == request.auth.uid &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    function isValidAdminUser(data) {
+      return data.keys().hasAll(['uid', 'createdAt']) &&
+        data.keys().hasOnly(['uid', 'createdAt']) &&
+        data.uid is string && data.uid.size() >= 1 && data.uid.size() <= 128 && data.uid.matches('^[a-zA-Z0-9_\\-]+$') &&
+        data.createdAt is timestamp;
+    }
+
+    // Collection: /projects/{projectId}
+    match /projects/{projectId} {
+      allow get: if isSignedIn() && isValidId(projectId) && (existing().ownerId == request.auth.uid || isAdmin());
+      allow list: if isSignedIn() && existing().ownerId == request.auth.uid;
+
+      allow create: if isVerified() &&
+        isValidId(projectId) &&
+        isValidProject(incoming()) &&
+        incoming().createdAt == request.time &&
+        incoming().updatedAt == request.time;
+
+      allow update: if isVerified() &&
+        isValidId(projectId) &&
+        isValidProject(incoming()) &&
+        (existing().ownerId == request.auth.uid || isAdmin()) &&
+        incoming().code == existing().code &&
+        incoming().updatedAt == request.time &&
+        (incoming().createdAt == existing().createdAt || incoming().createdAt == request.time) && (
+          isAdmin() ||
+          // Action 1: Idempotent re-seed / sync by record owner
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && incoming().createdAt == request.time) ||
+          // Action 2: Statutory stage / disbursement progression on non-completed project
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && existing().status != 'Completed' &&
+            incoming().diff(existing()).affectedKeys().hasOnly(['stage', 'status', 'acquiredAreaHectares', 'disbursedInrCrores', 'updatedAt'])) ||
+          // Action 3: Metadata update on non-completed project
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && existing().status != 'Completed' &&
+            incoming().diff(existing()).affectedKeys().hasOnly(['title', 'state', 'district', 'agency', 'totalAreaHectares', 'budgetInrCrores', 'updatedAt']))
+        );
+
+      allow delete: if isVerified() &&
+        isValidId(projectId) &&
+        (existing().ownerId == request.auth.uid || isAdmin());
+    }
+
+    // Collection: /parcels/{parcelId}
+    match /parcels/{parcelId} {
+      allow get: if isSignedIn() && isValidId(parcelId) && (existing().ownerId == request.auth.uid || isAdmin());
+      allow list: if isSignedIn() && existing().ownerId == request.auth.uid;
+
+      allow create: if isVerified() &&
+        isValidId(parcelId) &&
+        isValidLandParcel(incoming()) &&
+        incoming().createdAt == request.time &&
+        incoming().updatedAt == request.time &&
+        parentProjectExistsAndAuthorized(incoming().projectId);
+
+      allow update: if isVerified() &&
+        isValidId(parcelId) &&
+        isValidLandParcel(incoming()) &&
+        (existing().ownerId == request.auth.uid || isAdmin()) &&
+        incoming().projectId == existing().projectId &&
+        incoming().updatedAt == request.time &&
+        (incoming().createdAt == existing().createdAt || incoming().createdAt == request.time) && (
+          isAdmin() ||
+          // Action 1: Idempotent re-seed / sync by record owner
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && incoming().createdAt == request.time) ||
+          // Action 2: Workflow / status progression on non-terminal parcel
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && existing().acquisitionStage != 'Possession Handover' &&
+            incoming().diff(existing()).affectedKeys().hasOnly(['acquisitionStage', 'compensationStatus', 'compensationAmountInr', 'rehabStatus', 'updatedAt'])) ||
+          // Action 3: Cadastral metadata edit on non-terminal parcel
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && existing().acquisitionStage != 'Possession Handover' &&
+            incoming().diff(existing()).affectedKeys().hasOnly(['surveyNumber', 'village', 'district', 'landownerName', 'areaHectares', 'landType', 'latitude', 'longitude', 'updatedAt']))
+        );
+
+      allow delete: if isVerified() &&
+        isValidId(parcelId) &&
+        (existing().ownerId == request.auth.uid || isAdmin());
+    }
+
+    // Collection: /landowners/{landownerId}
+    match /landowners/{landownerId} {
+      allow get: if isSignedIn() && isValidId(landownerId) && (existing().ownerId == request.auth.uid || isAdmin());
+      allow list: if isSignedIn() && existing().ownerId == request.auth.uid;
+
+      allow create: if isVerified() &&
+        isValidId(landownerId) &&
+        isValidLandownerRecord(incoming()) &&
+        incoming().createdAt == request.time &&
+        incoming().updatedAt == request.time &&
+        parentParcelExistsAndAuthorized(incoming().parcelId);
+
+      allow update: if isVerified() &&
+        isValidId(landownerId) &&
+        isValidLandownerRecord(incoming()) &&
+        (existing().ownerId == request.auth.uid || isAdmin()) &&
+        incoming().parcelId == existing().parcelId &&
+        incoming().projectId == existing().projectId &&
+        incoming().updatedAt == request.time &&
+        (incoming().createdAt == existing().createdAt || incoming().createdAt == request.time) && (
+          isAdmin() ||
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && incoming().createdAt == request.time) ||
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId &&
+            incoming().diff(existing()).affectedKeys().hasOnly(['kycVerified', 'sharePercentage', 'updatedAt']))
+        );
+
+      allow delete: if isVerified() && isValidId(landownerId) && (existing().ownerId == request.auth.uid || isAdmin());
+    }
+
+    // Collection: /compensations/{compensationId}
+    match /compensations/{compensationId} {
+      allow get: if isSignedIn() && isValidId(compensationId) && (existing().ownerId == request.auth.uid || isAdmin());
+      allow list: if isSignedIn() && existing().ownerId == request.auth.uid;
+
+      allow create: if isVerified() &&
+        isValidId(compensationId) &&
+        isValidCompensationRecord(incoming()) &&
+        incoming().createdAt == request.time &&
+        incoming().updatedAt == request.time &&
+        parentParcelExistsAndAuthorized(incoming().parcelId);
+
+      allow update: if isVerified() &&
+        isValidId(compensationId) &&
+        isValidCompensationRecord(incoming()) &&
+        (existing().ownerId == request.auth.uid || isAdmin()) &&
+        incoming().parcelId == existing().parcelId &&
+        incoming().projectId == existing().projectId &&
+        incoming().updatedAt == request.time &&
+        (incoming().createdAt == existing().createdAt || incoming().createdAt == request.time) && (
+          isAdmin() ||
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && incoming().createdAt == request.time) ||
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && existing().paymentStatus != 'paid' &&
+            incoming().diff(existing()).affectedKeys().hasOnly(['paidAmountInr', 'pendingAmountInr', 'paymentStatus', 'updatedAt']))
+        );
+
+      allow delete: if isVerified() && isValidId(compensationId) && (existing().ownerId == request.auth.uid || isAdmin());
+    }
+
+    // Collection: /documents/{documentId}
+    match /documents/{documentId} {
+      allow get: if isSignedIn() && isValidId(documentId) && (existing().ownerId == request.auth.uid || isAdmin());
+      allow list: if isSignedIn() && existing().ownerId == request.auth.uid;
+
+      allow create: if isVerified() &&
+        isValidId(documentId) &&
+        isValidDocumentRecord(incoming()) &&
+        incoming().createdAt == request.time &&
+        incoming().updatedAt == request.time &&
+        parentParcelExistsAndAuthorized(incoming().parcelId);
+
+      allow update: if isVerified() &&
+        isValidId(documentId) &&
+        isValidDocumentRecord(incoming()) &&
+        (existing().ownerId == request.auth.uid || isAdmin()) &&
+        incoming().parcelId == existing().parcelId &&
+        incoming().projectId == existing().projectId &&
+        incoming().updatedAt == request.time &&
+        (incoming().createdAt == existing().createdAt || incoming().createdAt == request.time) && (
+          isAdmin() ||
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && incoming().createdAt == request.time) ||
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId &&
+            incoming().diff(existing()).affectedKeys().hasOnly(['verificationStatus', 'jamabandiStatus', 'encumbranceStatus', 'updatedAt']))
+        );
+
+      allow delete: if isVerified() && isValidId(documentId) && (existing().ownerId == request.auth.uid || isAdmin());
+    }
+
+    // Collection: /rehabilitation_resettlement/{rnrId}
+    match /rehabilitation_resettlement/{rnrId} {
+      allow get: if isSignedIn() && isValidId(rnrId) && (existing().ownerId == request.auth.uid || isAdmin());
+      allow list: if isSignedIn() && existing().ownerId == request.auth.uid;
+
+      allow create: if isVerified() &&
+        isValidId(rnrId) &&
+        isValidRehabilitationRecord(incoming()) &&
+        incoming().createdAt == request.time &&
+        incoming().updatedAt == request.time &&
+        parentParcelExistsAndAuthorized(incoming().parcelId);
+
+      allow update: if isVerified() &&
+        isValidId(rnrId) &&
+        isValidRehabilitationRecord(incoming()) &&
+        (existing().ownerId == request.auth.uid || isAdmin()) &&
+        incoming().parcelId == existing().parcelId &&
+        incoming().projectId == existing().projectId &&
+        incoming().updatedAt == request.time &&
+        (incoming().createdAt == existing().createdAt || incoming().createdAt == request.time) && (
+          isAdmin() ||
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && incoming().createdAt == request.time) ||
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && existing().rnrStatus != 'completed' &&
+            incoming().diff(existing()).affectedKeys().hasOnly(['rnrStatus', 'paymentStatus', 'updatedAt']))
+        );
+
+      allow delete: if isVerified() && isValidId(rnrId) && (existing().ownerId == request.auth.uid || isAdmin());
+    }
+
+    // Collection: /parcel_geometries/{parcelId}
+    match /parcel_geometries/{parcelId} {
+      allow get: if isSignedIn() && isValidId(parcelId) && (existing().ownerId == request.auth.uid || isAdmin());
+      allow list: if isSignedIn() && existing().ownerId == request.auth.uid;
+
+      allow create: if isVerified() &&
+        isValidId(parcelId) &&
+        isValidParcelGeometryRecord(incoming()) &&
+        incoming().createdAt == request.time &&
+        incoming().updatedAt == request.time &&
+        parentParcelExistsAndAuthorized(incoming().parcelId);
+
+      allow update: if isVerified() &&
+        isValidId(parcelId) &&
+        isValidParcelGeometryRecord(incoming()) &&
+        (existing().ownerId == request.auth.uid || isAdmin()) &&
+        incoming().parcelId == existing().parcelId &&
+        incoming().projectId == existing().projectId &&
+        incoming().updatedAt == request.time &&
+        (incoming().createdAt == existing().createdAt || incoming().createdAt == request.time) && (
+          isAdmin() ||
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId && incoming().createdAt == request.time) ||
+          (existing().ownerId == request.auth.uid && incoming().ownerId == existing().ownerId &&
+            incoming().diff(existing()).affectedKeys().hasOnly(['acquisitionStatus', 'paymentStatus', 'updatedAt']))
+        );
+
+      allow delete: if isVerified() && isValidId(parcelId) && (existing().ownerId == request.auth.uid || isAdmin());
+    }
+
+    // Collection: /admins/{adminId}
+    match /admins/{adminId} {
+      allow get: if isSignedIn() && isValidId(adminId) && (request.auth.uid == adminId || isAdmin());
+      allow list: if false;
+      allow create, update: if isAdmin() && isValidId(adminId) && isValidAdminUser(incoming()) && incoming().createdAt == request.time;
+      allow delete: if isAdmin() && isValidId(adminId);
+    }
+  }
+}

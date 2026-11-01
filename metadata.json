@@ -1,0 +1,6 @@
+{
+  "name": "BhoomiTrack AI — National Land Acquisition System",
+  "description": "National Land Acquisition and Management System (SIH26016) for end-to-end digital monitoring, GIS parcel tracking, and AI decision support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

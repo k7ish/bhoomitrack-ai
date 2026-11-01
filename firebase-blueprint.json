@@ -1,0 +1,284 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "A national or state infrastructure land acquisition project monitored in BhoomiTrack AI.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "minLength": 3, "maxLength": 150 },
+        "code": { "type": "string", "minLength": 2, "maxLength": 40, "pattern": "^[A-Za-z0-9_\\-]+$" },
+        "state": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "district": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "agency": { "type": "string", "minLength": 2, "maxLength": 100 },
+        "totalAreaHectares": { "type": "number" },
+        "acquiredAreaHectares": { "type": "number" },
+        "budgetInrCrores": { "type": "number" },
+        "disbursedInrCrores": { "type": "number" },
+        "stage": {
+          "type": "string",
+          "enum": ["Section 4 SIA", "Section 11 Notification", "Section 19 Declaration", "Section 23 Award", "Possession Taken"],
+          "minLength": 3,
+          "maxLength": 40
+        },
+        "status": {
+          "type": "string",
+          "enum": ["Active", "Delayed", "Disputed", "Completed"],
+          "minLength": 3,
+          "maxLength": 20
+        },
+        "ownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": [
+        "title", "code", "state", "district", "agency",
+        "totalAreaHectares", "acquiredAreaHectares",
+        "budgetInrCrores", "disbursedInrCrores",
+        "stage", "status", "ownerId", "createdAt", "updatedAt"
+      ]
+    },
+    "LandParcel": {
+      "title": "LandParcel",
+      "description": "An individual land parcel tracked under a land acquisition project.",
+      "type": "object",
+      "properties": {
+        "surveyNumber": { "type": "string", "minLength": 1, "maxLength": 60 },
+        "projectId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "projectTitle": { "type": "string", "minLength": 3, "maxLength": 150 },
+        "village": { "type": "string", "minLength": 2, "maxLength": 100 },
+        "district": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "landownerName": { "type": "string", "minLength": 2, "maxLength": 120 },
+        "areaHectares": { "type": "number" },
+        "landType": {
+          "type": "string",
+          "enum": ["Agricultural", "Residential", "Commercial", "Barren", "Forest"],
+          "minLength": 3,
+          "maxLength": 30
+        },
+        "acquisitionStage": {
+          "type": "string",
+          "enum": ["Survey Pending", "SIA Underway", "Notification Issued", "Award Declared", "Compensation Paid", "Possession Handover"],
+          "minLength": 3,
+          "maxLength": 40
+        },
+        "compensationStatus": {
+          "type": "string",
+          "enum": ["Pending Assessment", "Approved", "Disbursed", "Litigation"],
+          "minLength": 3,
+          "maxLength": 30
+        },
+        "compensationAmountInr": { "type": "number" },
+        "rehabStatus": {
+          "type": "string",
+          "enum": ["Not Applicable", "Eligible", "Allotted", "Completed"],
+          "minLength": 3,
+          "maxLength": 30
+        },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "ownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": [
+        "surveyNumber", "projectId", "projectTitle", "village", "district",
+        "landownerName", "areaHectares", "landType", "acquisitionStage",
+        "compensationStatus", "compensationAmountInr", "rehabStatus",
+        "latitude", "longitude", "ownerId", "createdAt", "updatedAt"
+      ]
+    },
+    "LandownerRecord": {
+      "title": "LandownerRecord",
+      "description": "Synthetic demonstration landowner record linked to a parcel and project.",
+      "type": "object",
+      "properties": {
+        "landownerId": { "type": "string", "minLength": 1, "maxLength": 60, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "parcelId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "projectId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "fullName": { "type": "string", "minLength": 2, "maxLength": 120 },
+        "fatherOrSpouseName": { "type": "string", "minLength": 2, "maxLength": 120 },
+        "dummyContactNumber": { "type": "string", "minLength": 5, "maxLength": 30 },
+        "dummyEmail": { "type": "string", "minLength": 5, "maxLength": 120 },
+        "village": { "type": "string", "minLength": 2, "maxLength": 100 },
+        "district": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "ownershipType": { "type": "string", "minLength": 2, "maxLength": 50 },
+        "sharePercentage": { "type": "number" },
+        "kycVerified": { "type": "boolean" },
+        "isSyntheticDemo": { "type": "boolean" },
+        "ownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": [
+        "landownerId", "parcelId", "projectId", "fullName", "fatherOrSpouseName",
+        "dummyContactNumber", "dummyEmail", "village", "district", "ownershipType",
+        "sharePercentage", "kycVerified", "isSyntheticDemo", "ownerId", "createdAt", "updatedAt"
+      ]
+    },
+    "CompensationRecord": {
+      "title": "CompensationRecord",
+      "description": "Synthetic demonstration compensation record linked to a parcel, project, and landowner.",
+      "type": "object",
+      "properties": {
+        "compensationId": { "type": "string", "minLength": 1, "maxLength": 60, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "parcelId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "projectId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "landownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "baseMarketValueInr": { "type": "number" },
+        "solatiumAmountInr": { "type": "number" },
+        "multiplierFactor": { "type": "number" },
+        "totalAwardAmountInr": { "type": "number" },
+        "paidAmountInr": { "type": "number" },
+        "pendingAmountInr": { "type": "number" },
+        "paymentStatus": { "type": "string", "enum": ["pending", "partially_paid", "paid"], "minLength": 4, "maxLength": 20 },
+        "pfmsReferenceCode": { "type": "string", "minLength": 2, "maxLength": 60 },
+        "awardDate": { "type": "string", "minLength": 4, "maxLength": 30 },
+        "isSyntheticDemo": { "type": "boolean" },
+        "ownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": [
+        "compensationId", "parcelId", "projectId", "landownerId",
+        "baseMarketValueInr", "solatiumAmountInr", "multiplierFactor",
+        "totalAwardAmountInr", "paidAmountInr", "pendingAmountInr",
+        "paymentStatus", "pfmsReferenceCode", "awardDate",
+        "isSyntheticDemo", "ownerId", "createdAt", "updatedAt"
+      ]
+    },
+    "DocumentRecord": {
+      "title": "DocumentRecord",
+      "description": "Synthetic demonstration statutory document verification record linked to a parcel.",
+      "type": "object",
+      "properties": {
+        "documentId": { "type": "string", "minLength": 1, "maxLength": 60, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "parcelId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "projectId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "landownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "jamabandiStatus": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "section11GazetteRef": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "section19DeclarationRef": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "encumbranceStatus": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "verificationStatus": { "type": "string", "enum": ["verified", "objection_logged", "pending_verification"], "minLength": 4, "maxLength": 30 },
+        "verifiedByOfficer": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "isSyntheticDemo": { "type": "boolean" },
+        "ownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": [
+        "documentId", "parcelId", "projectId", "landownerId",
+        "jamabandiStatus", "section11GazetteRef", "section19DeclarationRef",
+        "encumbranceStatus", "verificationStatus", "verifiedByOfficer",
+        "isSyntheticDemo", "ownerId", "createdAt", "updatedAt"
+      ]
+    },
+    "RehabilitationRecord": {
+      "title": "RehabilitationRecord",
+      "description": "Synthetic demonstration R&R entitlement record linked to a parcel.",
+      "type": "object",
+      "properties": {
+        "rnrId": { "type": "string", "minLength": 1, "maxLength": 60, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "parcelId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "projectId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "landownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "affectedFamilySize": { "type": "number" },
+        "livelihoodCategory": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "subsistenceAllowanceInr": { "type": "number" },
+        "resettlementGrantInr": { "type": "number" },
+        "housingUnitEntitled": { "type": "boolean" },
+        "rnrStatus": { "type": "string", "enum": ["assessment_ongoing", "allotted", "completed"], "minLength": 4, "maxLength": 30 },
+        "paymentStatus": { "type": "string", "enum": ["pending", "partially_paid", "paid"], "minLength": 4, "maxLength": 20 },
+        "allotmentReference": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "isSyntheticDemo": { "type": "boolean" },
+        "ownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": [
+        "rnrId", "parcelId", "projectId", "landownerId",
+        "affectedFamilySize", "livelihoodCategory", "subsistenceAllowanceInr",
+        "resettlementGrantInr", "housingUnitEntitled", "rnrStatus",
+        "paymentStatus", "allotmentReference", "isSyntheticDemo",
+        "ownerId", "createdAt", "updatedAt"
+      ]
+    },
+    "ParcelGeometryRecord": {
+      "title": "ParcelGeometryRecord",
+      "description": "Synthetic demonstration rectangular GeoJSON bounding box linked to a parcel.",
+      "type": "object",
+      "properties": {
+        "parcelId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "projectId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "demoUlpin": { "type": "string", "minLength": 2, "maxLength": 60 },
+        "acquisitionStatus": {
+          "type": "string",
+          "enum": ["not_initiated", "notification_issued", "documentation_pending", "disputed", "approved", "acquired"],
+          "minLength": 4,
+          "maxLength": 30
+        },
+        "paymentStatus": { "type": "string", "enum": ["pending", "partially_paid", "paid"], "minLength": 4, "maxLength": 20 },
+        "village": { "type": "string", "minLength": 2, "maxLength": 100 },
+        "district": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "bboxLatMin": { "type": "number" },
+        "bboxLatMax": { "type": "number" },
+        "bboxLngMin": { "type": "number" },
+        "bboxLngMax": { "type": "number" },
+        "isSyntheticDemo": { "type": "boolean" },
+        "ownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": [
+        "parcelId", "projectId", "demoUlpin", "acquisitionStatus",
+        "paymentStatus", "village", "district",
+        "bboxLatMin", "bboxLatMax", "bboxLngMin", "bboxLngMax",
+        "isSyntheticDemo", "ownerId", "createdAt", "updatedAt"
+      ]
+    },
+    "AdminUser": {
+      "title": "AdminUser",
+      "description": "Trusted administrator marker document.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/projects/{projectId}": {
+      "schema": { "$ref": "#/entities/Project" },
+      "description": "Stores infrastructure land acquisition projects."
+    },
+    "/parcels/{parcelId}": {
+      "schema": { "$ref": "#/entities/LandParcel" },
+      "description": "Stores land parcels linked to projects."
+    },
+    "/landowners/{landownerId}": {
+      "schema": { "$ref": "#/entities/LandownerRecord" },
+      "description": "Stores synthetic landowner records linked to parcels."
+    },
+    "/compensations/{compensationId}": {
+      "schema": { "$ref": "#/entities/CompensationRecord" },
+      "description": "Stores compensation award records linked to parcels."
+    },
+    "/documents/{documentId}": {
+      "schema": { "$ref": "#/entities/DocumentRecord" },
+      "description": "Stores statutory document verification records linked to parcels."
+    },
+    "/rehabilitation_resettlement/{rnrId}": {
+      "schema": { "$ref": "#/entities/RehabilitationRecord" },
+      "description": "Stores R&R entitlement records linked to parcels."
+    },
+    "/parcel_geometries/{parcelId}": {
+      "schema": { "$ref": "#/entities/ParcelGeometryRecord" },
+      "description": "Stores synthetic rectangular polygon bounds linked to parcels."
+    },
+    "/admins/{adminId}": {
+      "schema": { "$ref": "#/entities/AdminUser" },
+      "description": "Stores trusted administrator UIDs."
+    }
+  }
+}

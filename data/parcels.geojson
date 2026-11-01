@@ -1,0 +1,3697 @@
+{
+  "type": "FeatureCollection",
+  "name": "BhoomiTrack_AI_Punjab_Paddy_Belt_Irregular_Cadastral_Parcels",
+  "metadata": {
+    "dataset_name": "Tangori–Chunni Kalan–Sirhind Greenfield Paddy Belt Irregular Cadastral Dataset",
+    "region": "SAS Nagar (Mohali) / Fatehgarh Sahib Border, Punjab",
+    "center": [
+      30.6382,
+      76.6448
+    ],
+    "statutory_framework": "RFCTLARR Act, 2013",
+    "is_synthetic_demo": true,
+    "feature_count": 60
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PAR-PB-001",
+      "properties": {
+        "parcel_id": "PAR-PB-001",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0001",
+        "khasra_number": "9//22",
+        "village": "39175 Mauli Baidwan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.45,
+        "land_use_type": "Barren",
+        "soil_crop_type": "Canal Belt Agricultural",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 48500000,
+        "landowner_id": "OWN-PB-001",
+        "landowner_name": "Punjab Urban Planning & Development Authority, Chandigarh (PUDA / GMADA)",
+        "compensation_id": "CMP-PB-001",
+        "document_id": "DOC-PB-001",
+        "rnr_id": "RNR-PB-001",
+        "dispute_reason": "None — Khewat 166 Mutated 1/1 in favor of PUDA/GMADA (Non-Developable Plot, 48 K",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.644599,
+              30.639285
+            ],
+            [
+              76.645275,
+              30.639559
+            ],
+            [
+              76.645993,
+              30.639614
+            ],
+            [
+              76.646488,
+              30.638558
+            ],
+            [
+              76.645233,
+              30.638853
+            ],
+            [
+              76.644599,
+              30.639285
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-002",
+      "properties": {
+        "parcel_id": "PAR-PB-002",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0002",
+        "khasra_number": "18/2",
+        "village": "39175 Mauli Baidwan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 1.12,
+        "land_use_type": "Residential",
+        "soil_crop_type": "Abadi Edge",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 36200000,
+        "landowner_id": "OWN-PB-002",
+        "landowner_name": "Harjinder Kaur Gill",
+        "compensation_id": "CMP-PB-002",
+        "document_id": "DOC-PB-002",
+        "rnr_id": "RNR-PB-002",
+        "dispute_reason": "Section 15 objection on Rural vs Urban Multiplier & Abadi edge R&R displacement ",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.639074,
+              30.63794
+            ],
+            [
+              76.639542,
+              30.637487
+            ],
+            [
+              76.640873,
+              30.63699
+            ],
+            [
+              76.639354,
+              30.637074
+            ],
+            [
+              76.639074,
+              30.63794
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-003",
+      "properties": {
+        "parcel_id": "PAR-PB-003",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0003",
+        "khasra_number": "21/1",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "232 Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 3.1,
+        "land_use_type": "Commercial",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "approved",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74000000,
+        "landowner_id": "OWN-PB-003",
+        "landowner_name": "Rajeshwar Sharma & Bros",
+        "compensation_id": "CMP-PB-003",
+        "document_id": "DOC-PB-003",
+        "rnr_id": "RNR-PB-003",
+        "dispute_reason": "None (Approved — Consent Award Signed)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.638553,
+              30.638911
+            ],
+            [
+              76.640219,
+              30.639391
+            ],
+            [
+              76.640549,
+              30.638321
+            ],
+            [
+              76.63961,
+              30.637969
+            ],
+            [
+              76.639074,
+              30.63794
+            ],
+            [
+              76.638553,
+              30.638911
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-004",
+      "properties": {
+        "parcel_id": "PAR-PB-004",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0004",
+        "khasra_number": "4",
+        "village": "Mullanpur Garibdass",
+        "tehsil": "Kharar",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 1.85,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 29500000,
+        "landowner_id": "OWN-PB-004",
+        "landowner_name": "Sukhdev Singh Bajwa",
+        "compensation_id": "CMP-PB-004",
+        "document_id": "DOC-PB-004",
+        "rnr_id": "RNR-PB-004",
+        "dispute_reason": "Title partition pending among 3 co-sharers in Jamabandi land registry record",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.641428,
+              30.638491
+            ],
+            [
+              76.642585,
+              30.638586
+            ],
+            [
+              76.643297,
+              30.639022
+            ],
+            [
+              76.64339,
+              30.637815
+            ],
+            [
+              76.642221,
+              30.637774
+            ],
+            [
+              76.641428,
+              30.638491
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-005",
+      "properties": {
+        "parcel_id": "PAR-PB-005",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0005",
+        "khasra_number": "42//11",
+        "village": "39175 Mauli Baidwan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.9,
+        "land_use_type": "Commercial",
+        "soil_crop_type": "Canal Belt Agricultural",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 62000000,
+        "landowner_id": "OWN-PB-005",
+        "landowner_name": "Punjab Urban Planning & Development Authority, Chandigarh (PUDA / GMADA)",
+        "compensation_id": "CMP-PB-005",
+        "document_id": "DOC-PB-005",
+        "rnr_id": "RNR-PB-005",
+        "dispute_reason": "None — PUDA/GMADA Acquired Sector Plot (Khewat 166)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.640219,
+              30.639391
+            ],
+            [
+              76.640585,
+              30.639259
+            ],
+            [
+              76.641063,
+              30.639789
+            ],
+            [
+              76.641265,
+              30.639203
+            ],
+            [
+              76.641428,
+              30.638491
+            ],
+            [
+              76.640549,
+              30.638321
+            ],
+            [
+              76.640219,
+              30.639391
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-006",
+      "properties": {
+        "parcel_id": "PAR-PB-006",
+        "project_id": "PRJ-HR-PKL-004",
+        "project_name": "Banur–Landran–Chunni Kalan Southern Freight Bypass",
+        "demo_ulpin": "PB-SAS-KHR-039-0006",
+        "khasra_number": "56/1",
+        "village": "Chunni Kalan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar / Fatehgarh Sahib",
+        "state": "Punjab",
+        "area_hectares": 1.6,
+        "land_use_type": "Residential",
+        "soil_crop_type": "Abadi Edge",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 21000000,
+        "landowner_id": "OWN-PB-006",
+        "landowner_name": "Desh Raj Verma",
+        "compensation_id": "CMP-PB-006",
+        "document_id": "DOC-PB-006",
+        "rnr_id": "RNR-PB-006",
+        "dispute_reason": "Tubewell & Abadi perimeter plot 56/1 under Section 15 valuation objection",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.642573,
+              30.635261
+            ],
+            [
+              76.644207,
+              30.635795
+            ],
+            [
+              76.644638,
+              30.634777
+            ],
+            [
+              76.643929,
+              30.634541
+            ],
+            [
+              76.642888,
+              30.63436
+            ],
+            [
+              76.642573,
+              30.635261
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-007",
+      "properties": {
+        "parcel_id": "PAR-PB-007",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0007",
+        "khasra_number": "23/1",
+        "village": "39175 Mauli Baidwan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.23,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-007",
+        "landowner_name": "Paramjit Singh Cheema",
+        "compensation_id": "CMP-PB-007",
+        "document_id": "DOC-PB-007",
+        "rnr_id": "RNR-PB-007",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.640549,
+              30.638321
+            ],
+            [
+              76.641428,
+              30.638491
+            ],
+            [
+              76.642221,
+              30.637774
+            ],
+            [
+              76.64108,
+              30.637251
+            ],
+            [
+              76.640873,
+              30.63699
+            ],
+            [
+              76.640716,
+              30.637637
+            ],
+            [
+              76.640549,
+              30.638321
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-008",
+      "properties": {
+        "parcel_id": "PAR-PB-008",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0008",
+        "khasra_number": "14//2/1",
+        "village": "Chunni Kalan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.23,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-008",
+        "landowner_name": "Amarjit Singh Sidhu",
+        "compensation_id": "CMP-PB-008",
+        "document_id": "DOC-PB-008",
+        "rnr_id": "RNR-PB-008",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.639074,
+              30.63794
+            ],
+            [
+              76.63961,
+              30.637969
+            ],
+            [
+              76.640549,
+              30.638321
+            ],
+            [
+              76.640716,
+              30.637637
+            ],
+            [
+              76.640873,
+              30.63699
+            ],
+            [
+              76.639542,
+              30.637487
+            ],
+            [
+              76.639074,
+              30.63794
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-009",
+      "properties": {
+        "parcel_id": "PAR-PB-009",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0009",
+        "khasra_number": "6//11",
+        "village": "39175 Mauli Baidwan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.07,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Canal Belt Agricultural",
+        "acquisition_status": "approved",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-009",
+        "landowner_name": "Rajwinder Singh Gill",
+        "compensation_id": "CMP-PB-009",
+        "document_id": "DOC-PB-009",
+        "rnr_id": "RNR-PB-009",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.643297,
+              30.639022
+            ],
+            [
+              76.644599,
+              30.639285
+            ],
+            [
+              76.644478,
+              30.638748
+            ],
+            [
+              76.644673,
+              30.638387
+            ],
+            [
+              76.644139,
+              30.637807
+            ],
+            [
+              76.64339,
+              30.637815
+            ],
+            [
+              76.643297,
+              30.639022
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-010",
+      "properties": {
+        "parcel_id": "PAR-PB-010",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0010",
+        "khasra_number": "15//8/2",
+        "village": "Sawara",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.07,
+        "land_use_type": "Residential",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 65600000,
+        "landowner_id": "OWN-PB-010",
+        "landowner_name": "Gurpreet Singh Sharma",
+        "compensation_id": "CMP-PB-010",
+        "document_id": "DOC-PB-010",
+        "rnr_id": "RNR-PB-010",
+        "dispute_reason": "Section 15 / Paddy Multiplier & Canal Partition Objection Logged",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.644599,
+              30.639285
+            ],
+            [
+              76.645233,
+              30.638853
+            ],
+            [
+              76.646488,
+              30.638558
+            ],
+            [
+              76.644673,
+              30.638387
+            ],
+            [
+              76.644478,
+              30.638748
+            ],
+            [
+              76.644599,
+              30.639285
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-011",
+      "properties": {
+        "parcel_id": "PAR-PB-011",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0011",
+        "khasra_number": "18//14",
+        "village": "Manakpur",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.23,
+        "land_use_type": "Commercial",
+        "soil_crop_type": "Orchard / Agro-Forestry",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-011",
+        "landowner_name": "Harjinder Singh Bajwa",
+        "compensation_id": "CMP-PB-011",
+        "document_id": "DOC-PB-011",
+        "rnr_id": "RNR-PB-011",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.641063,
+              30.639789
+            ],
+            [
+              76.642657,
+              30.640132
+            ],
+            [
+              76.643297,
+              30.639022
+            ],
+            [
+              76.641974,
+              30.639321
+            ],
+            [
+              76.641063,
+              30.639789
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-012",
+      "properties": {
+        "parcel_id": "PAR-PB-012",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0012",
+        "khasra_number": "20/1",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.07,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "notification_issued",
+        "payment_status": "pending",
+        "total_award_amount_inr": 65600000,
+        "landowner_id": "OWN-PB-012",
+        "landowner_name": "Manpreet Singh Dhillon",
+        "compensation_id": "CMP-PB-012",
+        "document_id": "DOC-PB-012",
+        "rnr_id": "RNR-PB-012",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.645993,
+              30.639614
+            ],
+            [
+              76.647494,
+              30.639929
+            ],
+            [
+              76.64786,
+              30.638784
+            ],
+            [
+              76.647051,
+              30.63895
+            ],
+            [
+              76.646488,
+              30.638558
+            ],
+            [
+              76.645993,
+              30.639614
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-013",
+      "properties": {
+        "parcel_id": "PAR-PB-013",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0013",
+        "khasra_number": "15//4/1",
+        "village": "Chunni Kalan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.23,
+        "land_use_type": "Barren",
+        "soil_crop_type": "Abadi Edge",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-013",
+        "landowner_name": "Sukhdev Singh Verma",
+        "compensation_id": "CMP-PB-013",
+        "document_id": "DOC-PB-013",
+        "rnr_id": "RNR-PB-013",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.641063,
+              30.639789
+            ],
+            [
+              76.641974,
+              30.639321
+            ],
+            [
+              76.643297,
+              30.639022
+            ],
+            [
+              76.642585,
+              30.638586
+            ],
+            [
+              76.641428,
+              30.638491
+            ],
+            [
+              76.641265,
+              30.639203
+            ],
+            [
+              76.641063,
+              30.639789
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-014",
+      "properties": {
+        "parcel_id": "PAR-PB-014",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0014",
+        "khasra_number": "19/2",
+        "village": "Sawara",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.23,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-014",
+        "landowner_name": "Kulwant Singh Sandhu",
+        "compensation_id": "CMP-PB-014",
+        "document_id": "DOC-PB-014",
+        "rnr_id": "RNR-PB-014",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.642657,
+              30.640132
+            ],
+            [
+              76.643309,
+              30.640003
+            ],
+            [
+              76.64408,
+              30.640536
+            ],
+            [
+              76.644599,
+              30.639285
+            ],
+            [
+              76.643297,
+              30.639022
+            ],
+            [
+              76.642657,
+              30.640132
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-015",
+      "properties": {
+        "parcel_id": "PAR-PB-015",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0015",
+        "khasra_number": "22//7/3",
+        "village": "Manakpur",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.07,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 65600000,
+        "landowner_id": "OWN-PB-015",
+        "landowner_name": "Balwinder Singh Grewal",
+        "compensation_id": "CMP-PB-015",
+        "document_id": "DOC-PB-015",
+        "rnr_id": "RNR-PB-015",
+        "dispute_reason": "Section 15 / Paddy Multiplier & Canal Partition Objection Logged",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.647494,
+              30.639929
+            ],
+            [
+              76.648076,
+              30.640229
+            ],
+            [
+              76.648923,
+              30.64024
+            ],
+            [
+              76.64904,
+              30.639601
+            ],
+            [
+              76.649181,
+              30.639143
+            ],
+            [
+              76.64786,
+              30.638784
+            ],
+            [
+              76.647494,
+              30.639929
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-016",
+      "properties": {
+        "parcel_id": "PAR-PB-016",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0016",
+        "khasra_number": "25//3/2",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.23,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Canal Belt Agricultural",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-016",
+        "landowner_name": "Jaswinder Singh Brar",
+        "compensation_id": "CMP-PB-016",
+        "document_id": "DOC-PB-016",
+        "rnr_id": "RNR-PB-016",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.648923,
+              30.64024
+            ],
+            [
+              76.649776,
+              30.640591
+            ],
+            [
+              76.650134,
+              30.63937
+            ],
+            [
+              76.649586,
+              30.639495
+            ],
+            [
+              76.649181,
+              30.639143
+            ],
+            [
+              76.64904,
+              30.639601
+            ],
+            [
+              76.648923,
+              30.64024
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-017",
+      "properties": {
+        "parcel_id": "PAR-PB-017",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0017",
+        "khasra_number": "85//1",
+        "village": "39175 Mauli Baidwan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.23,
+        "land_use_type": "Residential",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-017",
+        "landowner_name": "Paramjit Singh Cheema",
+        "compensation_id": "CMP-PB-017",
+        "document_id": "DOC-PB-017",
+        "rnr_id": "RNR-PB-017",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64408,
+              30.640536
+            ],
+            [
+              76.645691,
+              30.640888
+            ],
+            [
+              76.645672,
+              30.639928
+            ],
+            [
+              76.645993,
+              30.639614
+            ],
+            [
+              76.645275,
+              30.639559
+            ],
+            [
+              76.644599,
+              30.639285
+            ],
+            [
+              76.64408,
+              30.640536
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-018",
+      "properties": {
+        "parcel_id": "PAR-PB-018",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0018",
+        "khasra_number": "72//4",
+        "village": "39175 Mauli Baidwan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.23,
+        "land_use_type": "Commercial",
+        "soil_crop_type": "Orchard / Agro-Forestry",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-018",
+        "landowner_name": "Amarjit Singh Sidhu",
+        "compensation_id": "CMP-PB-018",
+        "document_id": "DOC-PB-018",
+        "rnr_id": "RNR-PB-018",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.645691,
+              30.640888
+            ],
+            [
+              76.646429,
+              30.640752
+            ],
+            [
+              76.64697,
+              30.640962
+            ],
+            [
+              76.647494,
+              30.639929
+            ],
+            [
+              76.645993,
+              30.639614
+            ],
+            [
+              76.645672,
+              30.639928
+            ],
+            [
+              76.645691,
+              30.640888
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-019",
+      "properties": {
+        "parcel_id": "PAR-PB-019",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0019",
+        "khasra_number": "11//4/2",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.73,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 49142857,
+        "landowner_id": "OWN-PB-019",
+        "landowner_name": "Rajwinder Singh Gill",
+        "compensation_id": "CMP-PB-019",
+        "document_id": "DOC-PB-019",
+        "rnr_id": "RNR-PB-019",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64697,
+              30.640962
+            ],
+            [
+              76.648263,
+              30.64124
+            ],
+            [
+              76.648923,
+              30.64024
+            ],
+            [
+              76.647738,
+              30.640603
+            ],
+            [
+              76.64697,
+              30.640962
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-020",
+      "properties": {
+        "parcel_id": "PAR-PB-020",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0020",
+        "khasra_number": "18//1/2",
+        "village": "Chunni Kalan",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.41,
+        "land_use_type": "Barren",
+        "soil_crop_type": "Abadi Edge",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 78900000,
+        "landowner_id": "OWN-PB-020",
+        "landowner_name": "Gurpreet Singh Sharma",
+        "compensation_id": "CMP-PB-020",
+        "document_id": "DOC-PB-020",
+        "rnr_id": "RNR-PB-020",
+        "dispute_reason": "Section 15 / Paddy Multiplier & Canal Partition Objection Logged",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.644207,
+              30.635795
+            ],
+            [
+              76.644534,
+              30.635983
+            ],
+            [
+              76.645521,
+              30.636301
+            ],
+            [
+              76.645433,
+              30.635588
+            ],
+            [
+              76.645618,
+              30.635158
+            ],
+            [
+              76.644916,
+              30.635136
+            ],
+            [
+              76.644207,
+              30.635795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-021",
+      "properties": {
+        "parcel_id": "PAR-PB-021",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0021",
+        "khasra_number": "24//1/1",
+        "village": "Sawara",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.73,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 49142857,
+        "landowner_id": "OWN-PB-021",
+        "landowner_name": "Harjinder Singh Bajwa",
+        "compensation_id": "CMP-PB-021",
+        "document_id": "DOC-PB-021",
+        "rnr_id": "RNR-PB-021",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64697,
+              30.640962
+            ],
+            [
+              76.647738,
+              30.640603
+            ],
+            [
+              76.648923,
+              30.64024
+            ],
+            [
+              76.648076,
+              30.640229
+            ],
+            [
+              76.647494,
+              30.639929
+            ],
+            [
+              76.64697,
+              30.640962
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-022",
+      "properties": {
+        "parcel_id": "PAR-PB-022",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0022",
+        "khasra_number": "3//9/2",
+        "village": "Manakpur",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.73,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 49142857,
+        "landowner_id": "OWN-PB-022",
+        "landowner_name": "Manpreet Singh Dhillon",
+        "compensation_id": "CMP-PB-022",
+        "document_id": "DOC-PB-022",
+        "rnr_id": "RNR-PB-022",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.648263,
+              30.64124
+            ],
+            [
+              76.648963,
+              30.641372
+            ],
+            [
+              76.649688,
+              30.641528
+            ],
+            [
+              76.650003,
+              30.641097
+            ],
+            [
+              76.649776,
+              30.640591
+            ],
+            [
+              76.648923,
+              30.64024
+            ],
+            [
+              76.648263,
+              30.64124
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-023",
+      "properties": {
+        "parcel_id": "PAR-PB-023",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0023",
+        "khasra_number": "7//1/3",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.41,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Canal Belt Agricultural",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 78900000,
+        "landowner_id": "OWN-PB-023",
+        "landowner_name": "Sukhdev Singh Verma",
+        "compensation_id": "CMP-PB-023",
+        "document_id": "DOC-PB-023",
+        "rnr_id": "RNR-PB-023",
+        "dispute_reason": "Section 15 / Paddy Multiplier & Canal Partition Objection Logged",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.644207,
+              30.635795
+            ],
+            [
+              76.644916,
+              30.635136
+            ],
+            [
+              76.645618,
+              30.635158
+            ],
+            [
+              76.644638,
+              30.634777
+            ],
+            [
+              76.644207,
+              30.635795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-024",
+      "properties": {
+        "parcel_id": "PAR-PB-024",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0024",
+        "khasra_number": "14//6/2",
+        "village": "Chunni Kalan",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.41,
+        "land_use_type": "Residential",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "notification_issued",
+        "payment_status": "pending",
+        "total_award_amount_inr": 78900000,
+        "landowner_id": "OWN-PB-024",
+        "landowner_name": "Kulwant Singh Sandhu",
+        "compensation_id": "CMP-PB-024",
+        "document_id": "DOC-PB-024",
+        "rnr_id": "RNR-PB-024",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.639354,
+              30.637074
+            ],
+            [
+              76.640873,
+              30.63699
+            ],
+            [
+              76.641206,
+              30.636125
+            ],
+            [
+              76.64007,
+              30.635835
+            ],
+            [
+              76.63932,
+              30.63582
+            ],
+            [
+              76.639478,
+              30.636241
+            ],
+            [
+              76.639354,
+              30.637074
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-025",
+      "properties": {
+        "parcel_id": "PAR-PB-025",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0025",
+        "khasra_number": "16//1/1",
+        "village": "Sarangpur",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.73,
+        "land_use_type": "Commercial",
+        "soil_crop_type": "Orchard / Agro-Forestry",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 49142857,
+        "landowner_id": "OWN-PB-025",
+        "landowner_name": "Balwinder Singh Grewal",
+        "compensation_id": "CMP-PB-025",
+        "document_id": "DOC-PB-025",
+        "rnr_id": "RNR-PB-025",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.640873,
+              30.63699
+            ],
+            [
+              76.64108,
+              30.637251
+            ],
+            [
+              76.642221,
+              30.637774
+            ],
+            [
+              76.64259,
+              30.63637
+            ],
+            [
+              76.641286,
+              30.636896
+            ],
+            [
+              76.640873,
+              30.63699
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-026",
+      "properties": {
+        "parcel_id": "PAR-PB-026",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0026",
+        "khasra_number": "16//2/4",
+        "village": "Mullanpur Garibdass",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.41,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 78900000,
+        "landowner_id": "OWN-PB-026",
+        "landowner_name": "Jaswinder Singh Brar",
+        "compensation_id": "CMP-PB-026",
+        "document_id": "DOC-PB-026",
+        "rnr_id": "RNR-PB-026",
+        "dispute_reason": "Section 15 / Paddy Multiplier & Canal Partition Objection Logged",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.645521,
+              30.636301
+            ],
+            [
+              76.647155,
+              30.636298
+            ],
+            [
+              76.647213,
+              30.635373
+            ],
+            [
+              76.646711,
+              30.635099
+            ],
+            [
+              76.645618,
+              30.635158
+            ],
+            [
+              76.645433,
+              30.635588
+            ],
+            [
+              76.645521,
+              30.636301
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-027",
+      "properties": {
+        "parcel_id": "PAR-PB-027",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0027",
+        "khasra_number": "73//2",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.41,
+        "land_use_type": "Barren",
+        "soil_crop_type": "Abadi Edge",
+        "acquisition_status": "documentation_pending",
+        "payment_status": "pending",
+        "total_award_amount_inr": 78900000,
+        "landowner_id": "OWN-PB-027",
+        "landowner_name": "Paramjit Singh Cheema",
+        "compensation_id": "CMP-PB-027",
+        "document_id": "DOC-PB-027",
+        "rnr_id": "RNR-PB-027",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.640873,
+              30.63699
+            ],
+            [
+              76.641286,
+              30.636896
+            ],
+            [
+              76.64259,
+              30.63637
+            ],
+            [
+              76.641206,
+              30.636125
+            ],
+            [
+              76.640873,
+              30.63699
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-028",
+      "properties": {
+        "parcel_id": "PAR-PB-028",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0028",
+        "khasra_number": "22//5/1",
+        "village": "Chunni Kalan",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.73,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 49142857,
+        "landowner_id": "OWN-PB-028",
+        "landowner_name": "Amarjit Singh Sidhu",
+        "compensation_id": "CMP-PB-028",
+        "document_id": "DOC-PB-028",
+        "rnr_id": "RNR-PB-028",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.642221,
+              30.637774
+            ],
+            [
+              76.64339,
+              30.637815
+            ],
+            [
+              76.643418,
+              30.637429
+            ],
+            [
+              76.643963,
+              30.63703
+            ],
+            [
+              76.643171,
+              30.636735
+            ],
+            [
+              76.64259,
+              30.63637
+            ],
+            [
+              76.642221,
+              30.637774
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-029",
+      "properties": {
+        "parcel_id": "PAR-PB-029",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0029",
+        "khasra_number": "29//3/1",
+        "village": "Sawara",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.4,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "approved",
+        "payment_status": "paid",
+        "total_award_amount_inr": 49142857,
+        "landowner_id": "OWN-PB-029",
+        "landowner_name": "Rajwinder Singh Gill",
+        "compensation_id": "CMP-PB-029",
+        "document_id": "DOC-PB-029",
+        "rnr_id": "RNR-PB-029",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64339,
+              30.637815
+            ],
+            [
+              76.644139,
+              30.637807
+            ],
+            [
+              76.644673,
+              30.638387
+            ],
+            [
+              76.644947,
+              30.637086
+            ],
+            [
+              76.643963,
+              30.63703
+            ],
+            [
+              76.643418,
+              30.637429
+            ],
+            [
+              76.64339,
+              30.637815
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-030",
+      "properties": {
+        "parcel_id": "PAR-PB-030",
+        "project_id": "PRJ-CHD-METRO-002",
+        "project_name": "Tricity Metro Phase-1 Depot & Feeder Spur (Sarangpur to Tangori Belt)",
+        "demo_ulpin": "PB-SAS-KHR-039-0030",
+        "khasra_number": "30//8/2",
+        "village": "Manakpur",
+        "tehsil": "Kharar / Mohali",
+        "district": "Chandigarh UT & SAS Nagar",
+        "state": "Chandigarh / Punjab",
+        "area_hectares": 2.75,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Canal Belt Agricultural",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 49142858,
+        "landowner_id": "OWN-PB-030",
+        "landowner_name": "Gurpreet Singh Sharma",
+        "compensation_id": "CMP-PB-030",
+        "document_id": "DOC-PB-030",
+        "rnr_id": "RNR-PB-030",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.644673,
+              30.638387
+            ],
+            [
+              76.646488,
+              30.638558
+            ],
+            [
+              76.646335,
+              30.637429
+            ],
+            [
+              76.645856,
+              30.637313
+            ],
+            [
+              76.644947,
+              30.637086
+            ],
+            [
+              76.644673,
+              30.638387
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-031",
+      "properties": {
+        "parcel_id": "PAR-PB-031",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0031",
+        "khasra_number": "74//1",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.74,
+        "land_use_type": "Residential",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 50000000,
+        "landowner_id": "OWN-PB-031",
+        "landowner_name": "Harjinder Singh Bajwa",
+        "compensation_id": "CMP-PB-031",
+        "document_id": "DOC-PB-031",
+        "rnr_id": "RNR-PB-031",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.646488,
+              30.638558
+            ],
+            [
+              76.647051,
+              30.63895
+            ],
+            [
+              76.64786,
+              30.638784
+            ],
+            [
+              76.647772,
+              30.63821
+            ],
+            [
+              76.647715,
+              30.637607
+            ],
+            [
+              76.646881,
+              30.638167
+            ],
+            [
+              76.646488,
+              30.638558
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-032",
+      "properties": {
+        "parcel_id": "PAR-PB-032",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0032",
+        "khasra_number": "21//2/2",
+        "village": "Chunni Kalan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.74,
+        "land_use_type": "Commercial",
+        "soil_crop_type": "Orchard / Agro-Forestry",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 50000000,
+        "landowner_id": "OWN-PB-032",
+        "landowner_name": "Manpreet Singh Dhillon",
+        "compensation_id": "CMP-PB-032",
+        "document_id": "DOC-PB-032",
+        "rnr_id": "RNR-PB-032",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.646488,
+              30.638558
+            ],
+            [
+              76.646881,
+              30.638167
+            ],
+            [
+              76.647715,
+              30.637607
+            ],
+            [
+              76.646335,
+              30.637429
+            ],
+            [
+              76.646488,
+              30.638558
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-033",
+      "properties": {
+        "parcel_id": "PAR-PB-033",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0033",
+        "khasra_number": "5//1/4",
+        "village": "Sawara",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.74,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 50000000,
+        "landowner_id": "OWN-PB-033",
+        "landowner_name": "Sukhdev Singh Verma",
+        "compensation_id": "CMP-PB-033",
+        "document_id": "DOC-PB-033",
+        "rnr_id": "RNR-PB-033",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64786,
+              30.638784
+            ],
+            [
+              76.649181,
+              30.639143
+            ],
+            [
+              76.649376,
+              30.638014
+            ],
+            [
+              76.648331,
+              30.638108
+            ],
+            [
+              76.647715,
+              30.637607
+            ],
+            [
+              76.647772,
+              30.63821
+            ],
+            [
+              76.64786,
+              30.638784
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-034",
+      "properties": {
+        "parcel_id": "PAR-PB-034",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0034",
+        "khasra_number": "42//12",
+        "village": "Manakpur",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.2,
+        "land_use_type": "Barren",
+        "soil_crop_type": "Abadi Edge",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 39000000,
+        "landowner_id": "OWN-PB-034",
+        "landowner_name": "Kulwant Singh Sandhu",
+        "compensation_id": "CMP-PB-034",
+        "document_id": "DOC-PB-034",
+        "rnr_id": "RNR-PB-034",
+        "dispute_reason": "Section 15 / Paddy Multiplier & Canal Partition Objection Logged",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.647155,
+              30.636298
+            ],
+            [
+              76.647764,
+              30.636687
+            ],
+            [
+              76.648333,
+              30.637008
+            ],
+            [
+              76.648399,
+              30.635823
+            ],
+            [
+              76.647213,
+              30.635373
+            ],
+            [
+              76.647155,
+              30.636298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-035",
+      "properties": {
+        "parcel_id": "PAR-PB-035",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0035",
+        "khasra_number": "19//1/3",
+        "village": "39175 Mauli Baidwan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.74,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 50000000,
+        "landowner_id": "OWN-PB-035",
+        "landowner_name": "Balwinder Singh Grewal",
+        "compensation_id": "CMP-PB-035",
+        "document_id": "DOC-PB-035",
+        "rnr_id": "RNR-PB-035",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.649181,
+              30.639143
+            ],
+            [
+              76.649586,
+              30.639495
+            ],
+            [
+              76.650134,
+              30.63937
+            ],
+            [
+              76.650765,
+              30.638449
+            ],
+            [
+              76.649376,
+              30.638014
+            ],
+            [
+              76.649181,
+              30.639143
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-036",
+      "properties": {
+        "parcel_id": "PAR-PB-036",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0036",
+        "khasra_number": "26//1/2",
+        "village": "39175 Mauli Baidwan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.74,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 50000000,
+        "landowner_id": "OWN-PB-036",
+        "landowner_name": "Jaswinder Singh Brar",
+        "compensation_id": "CMP-PB-036",
+        "document_id": "DOC-PB-036",
+        "rnr_id": "RNR-PB-036",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.637945,
+              30.640003
+            ],
+            [
+              76.638989,
+              30.640236
+            ],
+            [
+              76.639257,
+              30.640457
+            ],
+            [
+              76.640219,
+              30.639391
+            ],
+            [
+              76.638553,
+              30.638911
+            ],
+            [
+              76.638157,
+              30.639204
+            ],
+            [
+              76.637945,
+              30.640003
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-037",
+      "properties": {
+        "parcel_id": "PAR-PB-037",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0037",
+        "khasra_number": "86//3",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.2,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Canal Belt Agricultural",
+        "acquisition_status": "notification_issued",
+        "payment_status": "pending",
+        "total_award_amount_inr": 39000000,
+        "landowner_id": "OWN-PB-037",
+        "landowner_name": "Paramjit Singh Cheema",
+        "compensation_id": "CMP-PB-037",
+        "document_id": "DOC-PB-037",
+        "rnr_id": "RNR-PB-037",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.639257,
+              30.640457
+            ],
+            [
+              76.641241,
+              30.640612
+            ],
+            [
+              76.641063,
+              30.639789
+            ],
+            [
+              76.640487,
+              30.640008
+            ],
+            [
+              76.639257,
+              30.640457
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-038",
+      "properties": {
+        "parcel_id": "PAR-PB-038",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0038",
+        "khasra_number": "75//4",
+        "village": "Chunni Kalan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.74,
+        "land_use_type": "Residential",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 50000000,
+        "landowner_id": "OWN-PB-038",
+        "landowner_name": "Amarjit Singh Sidhu",
+        "compensation_id": "CMP-PB-038",
+        "document_id": "DOC-PB-038",
+        "rnr_id": "RNR-PB-038",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.639257,
+              30.640457
+            ],
+            [
+              76.640487,
+              30.640008
+            ],
+            [
+              76.641063,
+              30.639789
+            ],
+            [
+              76.640585,
+              30.639259
+            ],
+            [
+              76.640219,
+              30.639391
+            ],
+            [
+              76.639257,
+              30.640457
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-039",
+      "properties": {
+        "parcel_id": "PAR-PB-039",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0039",
+        "khasra_number": "38//2/1",
+        "village": "Sawara",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.74,
+        "land_use_type": "Commercial",
+        "soil_crop_type": "Orchard / Agro-Forestry",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 50000000,
+        "landowner_id": "OWN-PB-039",
+        "landowner_name": "Rajwinder Singh Gill",
+        "compensation_id": "CMP-PB-039",
+        "document_id": "DOC-PB-039",
+        "rnr_id": "RNR-PB-039",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.641241,
+              30.640612
+            ],
+            [
+              76.641679,
+              30.640992
+            ],
+            [
+              76.642195,
+              30.641109
+            ],
+            [
+              76.642665,
+              30.640687
+            ],
+            [
+              76.642657,
+              30.640132
+            ],
+            [
+              76.641063,
+              30.639789
+            ],
+            [
+              76.641241,
+              30.640612
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-040",
+      "properties": {
+        "parcel_id": "PAR-PB-040",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0040",
+        "khasra_number": "40//5/2",
+        "village": "Manakpur",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.2,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "approved",
+        "payment_status": "paid",
+        "total_award_amount_inr": 50000000,
+        "landowner_id": "OWN-PB-040",
+        "landowner_name": "Gurpreet Singh Sharma",
+        "compensation_id": "CMP-PB-040",
+        "document_id": "DOC-PB-040",
+        "rnr_id": "RNR-PB-040",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.642195,
+              30.641109
+            ],
+            [
+              76.643582,
+              30.641242
+            ],
+            [
+              76.64408,
+              30.640536
+            ],
+            [
+              76.643309,
+              30.640003
+            ],
+            [
+              76.642657,
+              30.640132
+            ],
+            [
+              76.642665,
+              30.640687
+            ],
+            [
+              76.642195,
+              30.641109
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-041",
+      "properties": {
+        "parcel_id": "PAR-PB-041",
+        "project_id": "PRJ-PB-GMADA-003",
+        "project_name": "Aerotropolis Logistics & Paddy Belt Ring Link (PR-7 Spur)",
+        "demo_ulpin": "PB-SAS-KHR-039-0041",
+        "khasra_number": "41//7/1",
+        "village": "39175 Mauli Baidwan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 2.72,
+        "land_use_type": "Barren",
+        "soil_crop_type": "Abadi Edge",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 50000000,
+        "landowner_id": "OWN-PB-041",
+        "landowner_name": "Harjinder Singh Bajwa",
+        "compensation_id": "CMP-PB-041",
+        "document_id": "DOC-PB-041",
+        "rnr_id": "RNR-PB-041",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.643582,
+              30.641242
+            ],
+            [
+              76.644619,
+              30.641796
+            ],
+            [
+              76.645195,
+              30.641579
+            ],
+            [
+              76.645691,
+              30.640888
+            ],
+            [
+              76.64408,
+              30.640536
+            ],
+            [
+              76.643582,
+              30.641242
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-042",
+      "properties": {
+        "parcel_id": "PAR-PB-042",
+        "project_id": "PRJ-HR-PKL-004",
+        "project_name": "Banur–Landran–Chunni Kalan Southern Freight Bypass",
+        "demo_ulpin": "PB-SAS-KHR-039-0042",
+        "khasra_number": "5//2/1",
+        "village": "Chunni Kalan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar / Fatehgarh Sahib",
+        "state": "Punjab",
+        "area_hectares": 2.3,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 28000000,
+        "landowner_id": "OWN-PB-042",
+        "landowner_name": "Manpreet Singh Dhillon",
+        "compensation_id": "CMP-PB-042",
+        "document_id": "DOC-PB-042",
+        "rnr_id": "RNR-PB-042",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.645195,
+              30.641579
+            ],
+            [
+              76.646495,
+              30.642128
+            ],
+            [
+              76.64642,
+              30.641663
+            ],
+            [
+              76.64697,
+              30.640962
+            ],
+            [
+              76.646024,
+              30.641236
+            ],
+            [
+              76.645195,
+              30.641579
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-043",
+      "properties": {
+        "parcel_id": "PAR-PB-043",
+        "project_id": "PRJ-HR-PKL-004",
+        "project_name": "Banur–Landran–Chunni Kalan Southern Freight Bypass",
+        "demo_ulpin": "PB-SAS-KHR-039-0043",
+        "khasra_number": "35//4/2",
+        "village": "Manakpur",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar / Fatehgarh Sahib",
+        "state": "Punjab",
+        "area_hectares": 3,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 38000000,
+        "landowner_id": "OWN-PB-043",
+        "landowner_name": "Sukhdev Singh Verma",
+        "compensation_id": "CMP-PB-043",
+        "document_id": "DOC-PB-043",
+        "rnr_id": "RNR-PB-043",
+        "dispute_reason": "Section 15 / Paddy Multiplier & Canal Partition Objection Logged",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.648333,
+              30.637008
+            ],
+            [
+              76.649524,
+              30.637122
+            ],
+            [
+              76.649638,
+              30.636348
+            ],
+            [
+              76.649773,
+              30.636202
+            ],
+            [
+              76.649314,
+              30.635891
+            ],
+            [
+              76.648399,
+              30.635823
+            ],
+            [
+              76.648333,
+              30.637008
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-044",
+      "properties": {
+        "parcel_id": "PAR-PB-044",
+        "project_id": "PRJ-HR-PKL-004",
+        "project_name": "Banur–Landran–Chunni Kalan Southern Freight Bypass",
+        "demo_ulpin": "PB-SAS-KHR-039-0044",
+        "khasra_number": "34//1/1",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar / Fatehgarh Sahib",
+        "state": "Punjab",
+        "area_hectares": 2.3,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Canal Belt Agricultural",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 28000000,
+        "landowner_id": "OWN-PB-044",
+        "landowner_name": "Kulwant Singh Sandhu",
+        "compensation_id": "CMP-PB-044",
+        "document_id": "DOC-PB-044",
+        "rnr_id": "RNR-PB-044",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.645195,
+              30.641579
+            ],
+            [
+              76.646024,
+              30.641236
+            ],
+            [
+              76.64697,
+              30.640962
+            ],
+            [
+              76.646429,
+              30.640752
+            ],
+            [
+              76.645691,
+              30.640888
+            ],
+            [
+              76.645195,
+              30.641579
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-045",
+      "properties": {
+        "parcel_id": "PAR-PB-045",
+        "project_id": "PRJ-HR-PKL-004",
+        "project_name": "Banur–Landran–Chunni Kalan Southern Freight Bypass",
+        "demo_ulpin": "PB-SAS-KHR-039-0045",
+        "khasra_number": "56//2/3",
+        "village": "Sawara",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar / Fatehgarh Sahib",
+        "state": "Punjab",
+        "area_hectares": 3,
+        "land_use_type": "Residential",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "documentation_pending",
+        "payment_status": "pending",
+        "total_award_amount_inr": 38000000,
+        "landowner_id": "OWN-PB-045",
+        "landowner_name": "Balwinder Singh Grewal",
+        "compensation_id": "CMP-PB-045",
+        "document_id": "DOC-PB-045",
+        "rnr_id": "RNR-PB-045",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.646495,
+              30.642128
+            ],
+            [
+              76.647293,
+              30.642328
+            ],
+            [
+              76.647799,
+              30.642462
+            ],
+            [
+              76.648263,
+              30.64124
+            ],
+            [
+              76.64697,
+              30.640962
+            ],
+            [
+              76.64642,
+              30.641663
+            ],
+            [
+              76.646495,
+              30.642128
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-046",
+      "properties": {
+        "parcel_id": "PAR-PB-046",
+        "project_id": "PRJ-HR-PKL-004",
+        "project_name": "Banur–Landran–Chunni Kalan Southern Freight Bypass",
+        "demo_ulpin": "PB-SAS-KHR-039-0046",
+        "khasra_number": "27//6/2",
+        "village": "Sawara",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar / Fatehgarh Sahib",
+        "state": "Punjab",
+        "area_hectares": 3,
+        "land_use_type": "Commercial",
+        "soil_crop_type": "Orchard / Agro-Forestry",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 38000000,
+        "landowner_id": "OWN-PB-046",
+        "landowner_name": "Jaswinder Singh Brar",
+        "compensation_id": "CMP-PB-046",
+        "document_id": "DOC-PB-046",
+        "rnr_id": "RNR-PB-046",
+        "dispute_reason": "Section 15 / Paddy Multiplier & Canal Partition Objection Logged",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.649524,
+              30.637122
+            ],
+            [
+              76.650232,
+              30.637341
+            ],
+            [
+              76.651267,
+              30.637291
+            ],
+            [
+              76.651181,
+              30.636226
+            ],
+            [
+              76.650572,
+              30.636951
+            ],
+            [
+              76.649524,
+              30.637122
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-047",
+      "properties": {
+        "parcel_id": "PAR-PB-047",
+        "project_id": "PRJ-HR-PKL-004",
+        "project_name": "Banur–Landran–Chunni Kalan Southern Freight Bypass",
+        "demo_ulpin": "PB-SAS-KHR-039-0047",
+        "khasra_number": "87//2",
+        "village": "Chunni Kalan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar / Fatehgarh Sahib",
+        "state": "Punjab",
+        "area_hectares": 2.3,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 28000000,
+        "landowner_id": "OWN-PB-047",
+        "landowner_name": "Paramjit Singh Cheema",
+        "compensation_id": "CMP-PB-047",
+        "document_id": "DOC-PB-047",
+        "rnr_id": "RNR-PB-047",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.647799,
+              30.642462
+            ],
+            [
+              76.649082,
+              30.642559
+            ],
+            [
+              76.649688,
+              30.641528
+            ],
+            [
+              76.648963,
+              30.641372
+            ],
+            [
+              76.648263,
+              30.64124
+            ],
+            [
+              76.647799,
+              30.642462
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-048",
+      "properties": {
+        "parcel_id": "PAR-PB-048",
+        "project_id": "PRJ-HR-PKL-004",
+        "project_name": "Banur–Landran–Chunni Kalan Southern Freight Bypass",
+        "demo_ulpin": "PB-SAS-KHR-039-0048",
+        "khasra_number": "76//3",
+        "village": "Manakpur",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar / Fatehgarh Sahib",
+        "state": "Punjab",
+        "area_hectares": 3,
+        "land_use_type": "Barren",
+        "soil_crop_type": "Abadi Edge",
+        "acquisition_status": "not_initiated",
+        "payment_status": "pending",
+        "total_award_amount_inr": 38000000,
+        "landowner_id": "OWN-PB-048",
+        "landowner_name": "Amarjit Singh Sidhu",
+        "compensation_id": "CMP-PB-048",
+        "document_id": "DOC-PB-048",
+        "rnr_id": "RNR-PB-048",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.63932,
+              30.63582
+            ],
+            [
+              76.64007,
+              30.635835
+            ],
+            [
+              76.641206,
+              30.636125
+            ],
+            [
+              76.641603,
+              30.635034
+            ],
+            [
+              76.639988,
+              30.634879
+            ],
+            [
+              76.63932,
+              30.63582
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-049",
+      "properties": {
+        "parcel_id": "PAR-PB-049",
+        "project_id": "PRJ-HR-PKL-004",
+        "project_name": "Banur–Landran–Chunni Kalan Southern Freight Bypass",
+        "demo_ulpin": "PB-SAS-KHR-039-0049",
+        "khasra_number": "49//2/1",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar / Fatehgarh Sahib",
+        "state": "Punjab",
+        "area_hectares": 2.3,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 28000000,
+        "landowner_id": "OWN-PB-049",
+        "landowner_name": "Rajwinder Singh Gill",
+        "compensation_id": "CMP-PB-049",
+        "document_id": "DOC-PB-049",
+        "rnr_id": "RNR-PB-049",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.641206,
+              30.636125
+            ],
+            [
+              76.64259,
+              30.63637
+            ],
+            [
+              76.642692,
+              30.635844
+            ],
+            [
+              76.642573,
+              30.635261
+            ],
+            [
+              76.641879,
+              30.635355
+            ],
+            [
+              76.641603,
+              30.635034
+            ],
+            [
+              76.641206,
+              30.636125
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-050",
+      "properties": {
+        "parcel_id": "PAR-PB-050",
+        "project_id": "PRJ-PB-RAIL-005",
+        "project_name": "Rajpura–Mohali Dedicated Freight & Agricultural Rail Spur",
+        "demo_ulpin": "PB-SAS-KHR-039-0050",
+        "khasra_number": "39//1/2",
+        "village": "Manakpur",
+        "tehsil": "Rajpura / Mohali",
+        "district": "SAS Nagar / Patiala",
+        "state": "Punjab",
+        "area_hectares": 1.96,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 24800000,
+        "landowner_id": "OWN-PB-050",
+        "landowner_name": "Gurpreet Singh Sharma",
+        "compensation_id": "CMP-PB-050",
+        "document_id": "DOC-PB-050",
+        "rnr_id": "RNR-PB-050",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64259,
+              30.63637
+            ],
+            [
+              76.643171,
+              30.636735
+            ],
+            [
+              76.643963,
+              30.63703
+            ],
+            [
+              76.644207,
+              30.635795
+            ],
+            [
+              76.642881,
+              30.636143
+            ],
+            [
+              76.64259,
+              30.63637
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-051",
+      "properties": {
+        "parcel_id": "PAR-PB-051",
+        "project_id": "PRJ-PB-RAIL-005",
+        "project_name": "Rajpura–Mohali Dedicated Freight & Agricultural Rail Spur",
+        "demo_ulpin": "PB-SAS-KHR-039-0051",
+        "khasra_number": "36//3/1",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "Rajpura / Mohali",
+        "district": "SAS Nagar / Patiala",
+        "state": "Punjab",
+        "area_hectares": 1.96,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Canal Belt Agricultural",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 24800000,
+        "landowner_id": "OWN-PB-051",
+        "landowner_name": "Harjinder Singh Bajwa",
+        "compensation_id": "CMP-PB-051",
+        "document_id": "DOC-PB-051",
+        "rnr_id": "RNR-PB-051",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.64259,
+              30.63637
+            ],
+            [
+              76.642881,
+              30.636143
+            ],
+            [
+              76.644207,
+              30.635795
+            ],
+            [
+              76.642573,
+              30.635261
+            ],
+            [
+              76.642692,
+              30.635844
+            ],
+            [
+              76.64259,
+              30.63637
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-052",
+      "properties": {
+        "parcel_id": "PAR-PB-052",
+        "project_id": "PRJ-PB-RAIL-005",
+        "project_name": "Rajpura–Mohali Dedicated Freight & Agricultural Rail Spur",
+        "demo_ulpin": "PB-SAS-KHR-039-0052",
+        "khasra_number": "33//7/2",
+        "village": "Sawara",
+        "tehsil": "Rajpura / Mohali",
+        "district": "SAS Nagar / Patiala",
+        "state": "Punjab",
+        "area_hectares": 2.35,
+        "land_use_type": "Residential",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "disputed",
+        "payment_status": "pending",
+        "total_award_amount_inr": 30500000,
+        "landowner_id": "OWN-PB-052",
+        "landowner_name": "Manpreet Singh Dhillon",
+        "compensation_id": "CMP-PB-052",
+        "document_id": "DOC-PB-052",
+        "rnr_id": "RNR-PB-052",
+        "dispute_reason": "Section 15 / Paddy Multiplier & Canal Partition Objection Logged",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.649524,
+              30.637122
+            ],
+            [
+              76.650572,
+              30.636951
+            ],
+            [
+              76.651181,
+              30.636226
+            ],
+            [
+              76.649773,
+              30.636202
+            ],
+            [
+              76.649638,
+              30.636348
+            ],
+            [
+              76.649524,
+              30.637122
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-053",
+      "properties": {
+        "parcel_id": "PAR-PB-053",
+        "project_id": "PRJ-PB-RAIL-005",
+        "project_name": "Rajpura–Mohali Dedicated Freight & Agricultural Rail Spur",
+        "demo_ulpin": "PB-SAS-KHR-039-0053",
+        "khasra_number": "32//4/1",
+        "village": "Chunni Kalan",
+        "tehsil": "Rajpura / Mohali",
+        "district": "SAS Nagar / Patiala",
+        "state": "Punjab",
+        "area_hectares": 1.96,
+        "land_use_type": "Commercial",
+        "soil_crop_type": "Orchard / Agro-Forestry",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 24800000,
+        "landowner_id": "OWN-PB-053",
+        "landowner_name": "Sukhdev Singh Verma",
+        "compensation_id": "CMP-PB-053",
+        "document_id": "DOC-PB-053",
+        "rnr_id": "RNR-PB-053",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.643963,
+              30.63703
+            ],
+            [
+              76.644947,
+              30.637086
+            ],
+            [
+              76.645521,
+              30.636301
+            ],
+            [
+              76.644534,
+              30.635983
+            ],
+            [
+              76.644207,
+              30.635795
+            ],
+            [
+              76.643963,
+              30.63703
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-054",
+      "properties": {
+        "parcel_id": "PAR-PB-054",
+        "project_id": "PRJ-PB-RAIL-005",
+        "project_name": "Rajpura–Mohali Dedicated Freight & Agricultural Rail Spur",
+        "demo_ulpin": "PB-SAS-KHR-039-0054",
+        "khasra_number": "28//9/3",
+        "village": "Manakpur",
+        "tehsil": "Rajpura / Mohali",
+        "district": "SAS Nagar / Patiala",
+        "state": "Punjab",
+        "area_hectares": 2.35,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "not_initiated",
+        "payment_status": "pending",
+        "total_award_amount_inr": 30500000,
+        "landowner_id": "OWN-PB-054",
+        "landowner_name": "Kulwant Singh Sandhu",
+        "compensation_id": "CMP-PB-054",
+        "document_id": "DOC-PB-054",
+        "rnr_id": "RNR-PB-054",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.644947,
+              30.637086
+            ],
+            [
+              76.645856,
+              30.637313
+            ],
+            [
+              76.646335,
+              30.637429
+            ],
+            [
+              76.646448,
+              30.636964
+            ],
+            [
+              76.647155,
+              30.636298
+            ],
+            [
+              76.645521,
+              30.636301
+            ],
+            [
+              76.644947,
+              30.637086
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-055",
+      "properties": {
+        "parcel_id": "PAR-PB-055",
+        "project_id": "PRJ-PB-RAIL-005",
+        "project_name": "Rajpura–Mohali Dedicated Freight & Agricultural Rail Spur",
+        "demo_ulpin": "PB-SAS-KHR-039-0055",
+        "khasra_number": "88//1",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "Rajpura / Mohali",
+        "district": "SAS Nagar / Patiala",
+        "state": "Punjab",
+        "area_hectares": 1.96,
+        "land_use_type": "Barren",
+        "soil_crop_type": "Abadi Edge",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 24800000,
+        "landowner_id": "OWN-PB-055",
+        "landowner_name": "Balwinder Singh Grewal",
+        "compensation_id": "CMP-PB-055",
+        "document_id": "DOC-PB-055",
+        "rnr_id": "RNR-PB-055",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.646335,
+              30.637429
+            ],
+            [
+              76.647715,
+              30.637607
+            ],
+            [
+              76.648333,
+              30.637008
+            ],
+            [
+              76.647764,
+              30.636687
+            ],
+            [
+              76.647155,
+              30.636298
+            ],
+            [
+              76.646448,
+              30.636964
+            ],
+            [
+              76.646335,
+              30.637429
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-056",
+      "properties": {
+        "parcel_id": "PAR-PB-056",
+        "project_id": "PRJ-PB-RAIL-005",
+        "project_name": "Rajpura–Mohali Dedicated Freight & Agricultural Rail Spur",
+        "demo_ulpin": "PB-SAS-KHR-039-0056",
+        "khasra_number": "51//6/2",
+        "village": "Sawara",
+        "tehsil": "Rajpura / Mohali",
+        "district": "SAS Nagar / Patiala",
+        "state": "Punjab",
+        "area_hectares": 1.96,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 24800000,
+        "landowner_id": "OWN-PB-056",
+        "landowner_name": "Jaswinder Singh Brar",
+        "compensation_id": "CMP-PB-056",
+        "document_id": "DOC-PB-056",
+        "rnr_id": "RNR-PB-056",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.647715,
+              30.637607
+            ],
+            [
+              76.648331,
+              30.638108
+            ],
+            [
+              76.649376,
+              30.638014
+            ],
+            [
+              76.649524,
+              30.637122
+            ],
+            [
+              76.648527,
+              30.637333
+            ],
+            [
+              76.647715,
+              30.637607
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-057",
+      "properties": {
+        "parcel_id": "PAR-PB-057",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0057",
+        "khasra_number": "52//3/4",
+        "village": "Tangori Paddy Belt",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.23,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Wheat-Paddy Double Crop",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-057",
+        "landowner_name": "Paramjit Singh Cheema",
+        "compensation_id": "CMP-PB-057",
+        "document_id": "DOC-PB-057",
+        "rnr_id": "RNR-PB-057",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.647715,
+              30.637607
+            ],
+            [
+              76.648527,
+              30.637333
+            ],
+            [
+              76.649524,
+              30.637122
+            ],
+            [
+              76.648333,
+              30.637008
+            ],
+            [
+              76.647715,
+              30.637607
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-058",
+      "properties": {
+        "parcel_id": "PAR-PB-058",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0058",
+        "khasra_number": "54//8/1",
+        "village": "Chunni Kalan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.23,
+        "land_use_type": "Agricultural",
+        "soil_crop_type": "Canal Belt Agricultural",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-058",
+        "landowner_name": "Amarjit Singh Sidhu",
+        "compensation_id": "CMP-PB-058",
+        "document_id": "DOC-PB-058",
+        "rnr_id": "RNR-PB-058",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.649376,
+              30.638014
+            ],
+            [
+              76.650765,
+              30.638449
+            ],
+            [
+              76.650803,
+              30.637837
+            ],
+            [
+              76.651267,
+              30.637291
+            ],
+            [
+              76.650232,
+              30.637341
+            ],
+            [
+              76.649524,
+              30.637122
+            ],
+            [
+              76.649376,
+              30.638014
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-059",
+      "properties": {
+        "parcel_id": "PAR-PB-059",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0059",
+        "khasra_number": "58//2/3",
+        "village": "39175 Mauli Baidwan",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.23,
+        "land_use_type": "Residential",
+        "soil_crop_type": "Irrigated Paddy - Chahi",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115385,
+        "landowner_id": "OWN-PB-059",
+        "landowner_name": "Rajwinder Singh Gill",
+        "compensation_id": "CMP-PB-059",
+        "document_id": "DOC-PB-059",
+        "rnr_id": "RNR-PB-059",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.639988,
+              30.634879
+            ],
+            [
+              76.641603,
+              30.635034
+            ],
+            [
+              76.641682,
+              30.634705
+            ],
+            [
+              76.641616,
+              30.634007
+            ],
+            [
+              76.640891,
+              30.633704
+            ],
+            [
+              76.640312,
+              30.633867
+            ],
+            [
+              76.639988,
+              30.634879
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PAR-PB-060",
+      "properties": {
+        "parcel_id": "PAR-PB-060",
+        "project_id": "PRJ-PB-TRICITY-001",
+        "project_name": "SH-12A Tangori–Chunni Kalan–Sirhind Greenfield Highway Corridor",
+        "demo_ulpin": "PB-SAS-KHR-039-0060",
+        "khasra_number": "60//1/4",
+        "village": "Sawara",
+        "tehsil": "232 Mohali",
+        "district": "SAS Nagar (Mohali)",
+        "state": "Punjab",
+        "area_hectares": 3.22,
+        "land_use_type": "Commercial",
+        "soil_crop_type": "Orchard / Agro-Forestry",
+        "acquisition_status": "acquired",
+        "payment_status": "paid",
+        "total_award_amount_inr": 74115380,
+        "landowner_id": "OWN-PB-060",
+        "landowner_name": "Gurpreet Singh Sharma",
+        "compensation_id": "CMP-PB-060",
+        "document_id": "DOC-PB-060",
+        "rnr_id": "RNR-PB-060",
+        "dispute_reason": "Clear (Verified)",
+        "is_synthetic_demo": true,
+        "disclaimer": "SYNTHETIC_DEMO_POLYGON: Irregular 16-deg canal-aligned Punjab Paddy Belt Cadastral polygon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.641603,
+              30.635034
+            ],
+            [
+              76.641879,
+              30.635355
+            ],
+            [
+              76.642573,
+              30.635261
+            ],
+            [
+              76.642888,
+              30.63436
+            ],
+            [
+              76.641616,
+              30.634007
+            ],
+            [
+              76.641682,
+              30.634705
+            ],
+            [
+              76.641603,
+              30.635034
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
